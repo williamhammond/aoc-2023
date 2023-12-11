@@ -5,10 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Script",
+            "name": "day 01",
             "type": "cppvsdbg",
+            "preLaunchTask": "build day 01",
             "request": "launch",
-            "program": "${workspaceFolder}/zig-out/bin/aoc-2023.exe",
+            "program": "${workspaceFolder}/zig-out/bin/day01",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false
+        },
+        {
+            "name": "day 02",
+            "type": "cppvsdbg",
+            "preLaunchTask": "build day 02",
+            "request": "launch",
+            "program": "${workspaceFolder}/zig-out/bin/day02",
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

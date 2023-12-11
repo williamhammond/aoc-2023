@@ -2,14 +2,26 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build day 01",
             "type": "shell",
-            "command": "zig build",
+            "command": "zig",
+            "args": [
+                "build",
+                "install_day01"
+            ], // add -Doptimize=ReleaseSafe or -Doptimize=ReleaseFast to optimize
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
+            "group": "build",
+        },
+        {
+            "label": "build day 02",
+            "type": "shell",
+            "command": "zig",
+            "args": [
+                "build",
+                "install_day02"
+            ], // add -Doptimize=ReleaseSafe or -Doptimize=ReleaseFast to optimize
+            "problemMatcher": [],
+            "group": "build",
+        },
     ]
 }
